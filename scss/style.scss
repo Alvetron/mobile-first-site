@@ -30,6 +30,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
+  margin: 0;
 }
 
 .container {
@@ -208,7 +209,13 @@ body {
     display: inline-block;
     min-width: 200px;
     @extend %roboto-500;
+    transition: background-color .2s;
   }
+  
+  &__btn:hover {
+    background-color: #ebe0a1;
+  }
+
 }
 
 .service
@@ -467,6 +474,11 @@ body {
     text-decoration: none;
     display: inline-block;
     min-width: 200px;
+    transition: background-color .2s;
+  }
+
+  &__btn:hover {
+    background-color: #1e47a8;
   }
 
   &__btn--1024 {
@@ -1338,12 +1350,15 @@ body {
 }
 
 @media (min-width : 1440px) {
+
   .container {
     max-width: 1320px;
   }
+
   .menu__btn {
     margin-right: 90px;
   }
+
   .top-slider {
     &__title {
       font-size: 84px;
@@ -1351,14 +1366,18 @@ body {
       width: 588.95px;
       padding-top: 80px;
     }
+
     &__item {
       min-height: 618px
     }
+
     &__text { 
       font-size: 24px;
       line-height: 26px;
       width: 886px;
+      margin-bottom: 30px;
     }
+
   }
   
   .call {
